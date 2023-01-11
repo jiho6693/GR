@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.min.js"></script>
+    <link rel="stylesheet" href="gr.css">
+    <title>Home</title>
+    
+  </head>
+  <body>
+    <div class="grid_container">
+        <div class="name">JI-HO</div>
+        <div class="lists">
+            INTRO TO GRAPHIC DESIGN<br><br>
+            
+            <a href="slow1_1.html">01-1. SLOW</a><br>
+            <a style="color:rgb(183, 0, 255);" href="slow1_2.html">01-2. SLOW</a><br>
+            
+            <a href="fast1_1.html">02-1. FAST</a><br>
+            <a href="fast1_2.html">02-2. FAST</a><br>
+            <a href="fast1_3.html">02-3. FAST</a><br>
+            <a href="fast2_1.html">03-1. SLOW</a><br>
+            <a href="fast2_2.html">03-2. SLOW</a><br>
+            <a href="fast2_3.html">03-3. SLOW</a><br>
+            <a href="play.html">04. WORD</a><br>
+            
+        </div>
+        <div class="images">
+            01-1. 
+            &emsp; SLOW<br><br>
+            <div id="explain">
+                Depict the word “slow” so that it feels fast.<br><br>
+            </div>    
+            <div class="image">
+            <script>
+              let x = 0;
+              let y = 0;
+              let img;
+              
+              function setup() {
+                createCanvas(1650, 400);
+                img = loadImage('slow_images/slow.png')
+              }
+              
+              function draw() {
+                image(img,x+600,y,1000,400)
+                x = x - 70;
+              }
+            </script>    
+               
+              
+            
+            </div>
+        </div>    
+    </div>
+
+  </body>
+</html>
