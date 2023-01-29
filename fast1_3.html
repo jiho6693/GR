@@ -34,19 +34,26 @@
             </div>    
             <div class="image">
             <script>
-              let x = 0;
-              let y = 0;
-              let img;
-              
-              function setup() {
-                createCanvas(1650, 400);
-                img = loadImage('fast_images/fast3.png')
-              }
-              
-              function draw() {
-                image(img,x+600,y,1000,400)
-                x = x - 2;
-              }
+             let cx, cy
+
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+
+  cx = width/2;
+  cy = height/2;
+}
+
+function draw() {
+  background(200);
+  
+  const dx = constrain(rotationY, -3, 3);
+  const dy = constrain(rotationX, -3, 3);
+  cx += dx;
+  cy += dy;
+  
+  ellipse(cx, cy, 200, 200);
+
+}
             </script>    
                
               
