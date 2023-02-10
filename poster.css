@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'roboto';
+    src: url('Roboto-Light.ttf') format('truetype');
+}
+
+body {
+ margin-top: 20px;
+ margin-left: 20px;
+ font-size: 1.5em ;
+ font-family: 'roboto';
+}
+
+.grid_container {
+ display: grid;
+ grid-template-columns: 1fr 3fr 5fr;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+.image img {
+    width: 30vw;
+    border: 0.5px solid black;
+    
+}
+
+.image {
+    font-size: 0.7em;
+        
+   }
+
+#explain {
+ font-size: 0.7em;
+     
+}
